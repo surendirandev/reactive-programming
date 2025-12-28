@@ -12,16 +12,18 @@ public class Main {
     private static final Logger LOGGER = LoggerFactory.getLogger(Main.class);
 
     public static void main(String[] args) throws InterruptedException {
-        demo4();
+        error();
     }
 
-    private static void demo1() {
+    // No output is required
+    private static void simple() {
         PublisherImpl publisher = new PublisherImpl();
         SubscriberImpl subscriber = new SubscriberImpl();
         publisher.subscribe(subscriber);
     }
 
-    private static void demo2() throws InterruptedException {
+    // Multiple requests with series of delay
+    private static void noError() throws InterruptedException {
         PublisherImpl publisher = new PublisherImpl();
         SubscriberImpl subscriber = new SubscriberImpl();
         publisher.subscribe(subscriber);
@@ -35,7 +37,8 @@ public class Main {
         Thread.sleep(Duration.ofSeconds(2).toMillis());
     }
 
-    private static void demo3() throws InterruptedException {
+    // Cancelling the request middle of requests
+    private static void cancel() throws InterruptedException {
         PublisherImpl publisher = new PublisherImpl();
         SubscriberImpl subscriber = new SubscriberImpl();
         publisher.subscribe(subscriber);
@@ -50,7 +53,8 @@ public class Main {
         Thread.sleep(Duration.ofSeconds(2).toMillis());
     }
 
-    private static void demo4() throws InterruptedException {
+    // Erroring out the Subscriber
+    private static void error() throws InterruptedException {
         PublisherImpl publisher = new PublisherImpl();
         SubscriberImpl subscriber = new SubscriberImpl();
         publisher.subscribe(subscriber);
