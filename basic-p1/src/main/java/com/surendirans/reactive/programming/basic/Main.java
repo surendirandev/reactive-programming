@@ -1,8 +1,7 @@
-package com.surendirans.reactive.programming;
+package com.surendirans.reactive.programming.basic;
 
-import com.surendirans.reactive.programming.publisher.PublisherImpl;
-import com.surendirans.reactive.programming.publisher.SubscriptionImpl;
-import com.surendirans.reactive.programming.subscriber.SubscriberImpl;
+import com.surendirans.reactive.programming.basic.publisher.PublisherImpl;
+import com.surendirans.reactive.programming.basic.subscriber.SubscriberImpl;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

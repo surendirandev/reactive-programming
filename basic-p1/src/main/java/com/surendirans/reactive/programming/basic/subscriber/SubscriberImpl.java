@@ -1,4 +1,4 @@
-package com.surendirans.reactive.programming.subscriber;
+package com.surendirans.reactive.programming.basic.subscriber;
 
 import org.reactivestreams.Subscriber;
 import org.reactivestreams.Subscription;
@@ -14,8 +14,6 @@ public class SubscriberImpl implements Subscriber<String> {
     public Subscription getSubscription() {
         return subscription;
     }
-
-
 
     @Override
     public void onSubscribe(Subscription subscription) {

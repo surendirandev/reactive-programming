@@ -1,4 +1,4 @@
-package com.surendirans.reactive.programming.publisher;
+package com.surendirans.reactive.programming.basic.publisher;
 
 import com.github.javafaker.Faker;
 import org.reactivestreams.Subscriber;
